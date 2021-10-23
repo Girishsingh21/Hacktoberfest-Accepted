@@ -1,15 +1,15 @@
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.*; //importing java.awt package
+import java.awt.event.*; //importing java.awt.event package
 
 /*********************************************/
 
-public class MyCalculator extends Frame {
+public class MyCalculator extends Frame {   //initiating MyCalculator Class
 
     public boolean setClear = true;
     double number, memValue;
     char op;
 
-    String digitButtonText[] = {"7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "+/-", "."};
+    String digitButtonText[] = {"7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "+/-", "."}; // creating an array for all the buttons of calculator
     String operatorButtonText[] = {"/", "sqrt", "*", "%", "-", "1/X", "+", "="};
     String memoryButtonText[] = {"MC", "MR", "MS", "M+"};
     String specialButtonText[] = {"Backspc", "C", "CE"};
@@ -33,8 +33,8 @@ public class MyCalculator extends Frame {
 
         int tempX = TOPX, y = TOPY;
         displayLabel.setBounds(tempX, y, 240, HEIGHT);
-        displayLabel.setBackground(Color.BLUE);
-        displayLabel.setForeground(Color.WHITE);
+        displayLabel.setBackground(Color.BLUE); //setting the background colour to blue
+        displayLabel.setForeground(Color.WHITE); // setting the foreground colour to white
         add(displayLabel);
 
         memLabel.setBounds(TOPX, TOPY + HEIGHT + V_SPACE, WIDTH, HEIGHT);
